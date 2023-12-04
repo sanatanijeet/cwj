@@ -1,0 +1,63 @@
+Varibales Scope
+
+PHP has three different variable scopes:
+
+1. Global
+2. Local
+3. Static
+
+1. Global 
+    <?php
+        $x = 5; // global scope
+
+        function myTest() {
+        // using x inside this function will generate an error
+        echo "<p>Variable x inside function is: $x</p>";
+        }
+        myTest();
+
+        echo "<p>Variable x outside function is: $x</p>";
+    ?>
+
+2. Local 
+    <?php
+        function myTest() {
+        $x = 5; // local scope
+        echo "<p>Variable x inside function is: $x</p>";
+        }
+        myTest();
+
+        // using x outside the function will generate an error
+        echo "<p>Variable x outside function is: $x</p>";
+    ?>
+
+Note: The global keyword is used to access a global variable from within a function.
+    <?php
+        $x = 5;
+        $y = 10;
+
+        function myTest() {
+            global $x, $y;
+            $y = $x + $y;
+        }
+
+        myTest();
+        echo $y; // outputs 15
+    ?>
+
+
+3. Static: Normally, when a function is completed/executed, all of its variables are deleted. However, sometimes we want a local variable NOT to be deleted. We need it for a further job.
+
+    <?php
+        function myTest() {
+            static $x = 0;
+            echo $x;
+            $x++;
+    }
+
+        myTest();
+        myTest();
+        myTest();
+    ?>
+
+    

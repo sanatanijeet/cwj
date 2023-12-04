@@ -28,8 +28,8 @@
         // echo "Arithmetic operators, Assignment operators, Comparison operators, Increment/Decrement operators, logical Operators"
         echo "Assignment Operators <br>";
         echo "=============================== <br>";
-        $numOne = 5;
-        echo $numOne +=2;
+        $num1 = 5;
+        echo $num1 +=2;
     ?>
     <br>
     ============================================================================ <br>
@@ -63,5 +63,30 @@
     ?>
     <br>
     3. Static <br>
+    <?php
+        function myTest() {
+            static $x = 0;
+            echo $x;
+            $x++;
+    }
+    $cars = array("volvo", "bmw");
+    var_dump($cars);
+        myTest();
+    ?><br>
+<?php
+    $str = "This is string";
+    echo strlen($str); // string length
+    echo "<br>";
+    echo str_word_count($str); // string count
+    echo "<br>";
+    echo strrev($str); // string reverse
+    echo "<br>";
+    echo strpos($str, "is"); // find word position in string
+    echo "<br>";
+    echo str_replace(" is ", " is a ", $str); // replace word in string
+?>
+
+<br>
+
 </body>
 </html>
