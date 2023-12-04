@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <?php
+    <!-- <?php
         // echo "Hello world and this is printed using PHP";
     ?>
     <?php
@@ -87,6 +87,41 @@
 ?>
 
 <br>
+<?php
+    $someNumber = 598.5;
+    var_dump(is_integer($someNumber));
+?>
+<br>
 
+<?php
+$cv = acos(8);
+var_dump($cv);
+?> -->
+<!-- <br>
+<?php
+$x = 5985;
+var_dump(is_numeric($x));
+
+$x = "5985";
+var_dump(is_numeric($x));
+
+$x = "59.85" + 100;
+var_dump(is_numeric($x));
+
+$x = "Hello";
+var_dump(is_numeric($x));
+?>
+<br> -->
+
+<br> 
+<?php
+    $x = 567.8;
+    $cast_int = (int)$x;
+    echo $cast_int;
+    echo "<br>";
+    $y = "56748.768";
+    $int_cast = (int)$y;
+    echo $int_cast;
+?>
 </body>
 </html>
