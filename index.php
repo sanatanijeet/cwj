@@ -150,7 +150,7 @@ var_dump(is_numeric($x));
     test();
 ?> -->
 <br>
-<?php
+<!-- <?php
     class Fruits {
         public function myValue() {
             return __CLASS__;
@@ -158,6 +158,62 @@ var_dump(is_numeric($x));
     }
     $kiwi = new Fruits();
     echo $kiwi->myValue();
+?> -->
+<br>
+<!-- <?php
+    $a = 13;
+    $b = $a < 10 ? "Hello 10" : "Good Bye";
+    echo $b;
+?> -->
+<br>
+<!-- <?php
+    $a = 50;
+    if($a > 49){
+        echo "less then 49";
+        if($a<49){
+            echo "above 49";
+        }
+        else{
+            echo "Non of these";
+        }
+    }
+?> -->
+<br>
+<!-- <?php
+    $color = "orange";
+
+    switch ($color){
+        case "red":
+            echo "color is red";
+        break;
+        case "green":
+            echo "color is gree";
+        break;
+        default:
+        echo "Non of these";
+    }
+?> -->
+<br>
+<!-- <?php
+    for($x=0; $x <=10; $x++){
+        echo "$x <br>";
+    }
+?> -->
+<br>
+<!-- <?php
+    $age = array("Jeet"=>"35", "golu"=> "40");
+    foreach ($age as $x => $value) {
+        echo "$x = $value<br>";
+    }
+?> -->
+<br>
+<?php
+    //function with argument
+    function arg($name, $age){
+        echo "$name age is $age <br>";
+    }
+    arg("Jeet", 38);
+    arg("golu", 20);
 ?>
 <br>
 </body>
