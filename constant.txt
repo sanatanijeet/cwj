@@ -1,0 +1,40 @@
+    <?php
+        define("GREETING", "Welcome to W3Schools.com!"); // Output is Welcome to W3Schools.com!
+        echo GREETING;
+    ?>
+
+1. Create a constant with a case-insensitive name:
+
+    <?php
+        define("GREETING", "Welcome to W3Schools.com!", true); 
+        echo greeting;
+    ?>
+
+2. You can also create a constant by using the const keyword.
+
+    <?php
+        const MYCAR = "Volvo"; // output is Volvo
+        echo MYCAR;
+    ?>
+
+3. Different between const and define is:- 
+
+    a. const are always case-sensitive
+    b. define() has has a case-insensitive option.
+    c. const cannot be created inside another block scope, like inside a function or inside an if statement.
+    d. define can be created inside another block scope.
+
+4. PHP Constant Arrays
+
+    <?php
+        define("cars", [
+            "Alfa Romeo",
+            "BMW",
+            "Toyota"
+        ]);
+        echo cars[0]; // Output is Alfa Romeo
+    ?>
+
+5. Constants are Global
+    Constants are automatically global and can be used across the entire script.
+

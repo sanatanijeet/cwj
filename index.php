@@ -113,7 +113,7 @@ var_dump(is_numeric($x));
 ?>
 <br> -->
 
-<br> 
+<!-- <br> 
 <?php
     $x = 567.8;
     $cast_int = (int)$x;
@@ -122,6 +122,43 @@ var_dump(is_numeric($x));
     $y = "56748.768";
     $int_cast = (int)$y;
     echo $int_cast;
+?> -->
+
+<br>
+<!-- <?php
+    // define("GREETING", "Welcome to W3Schools.com!");
+    // echo GREETING;
+    // define("Hello", "HI", false);
+    // echo Hello;
+    const car = "Volvo";
+    echo car;
+?> -->
+
+<!-- <?php
+    define("cars", [
+        "Volvo", "BMW", "Hyundai"
+    ]);
+    echo cars[1];
+?> -->
+<br>
+<!-- <?php
+    define("GREETING", "Hello World!");
+
+    function test() {
+        echo GREETING;
+    }
+    test();
+?> -->
+<br>
+<?php
+    class Fruits {
+        public function myValue() {
+            return __CLASS__;
+        }
+    }
+    $kiwi = new Fruits();
+    echo $kiwi->myValue();
 ?>
+<br>
 </body>
 </html>
